@@ -1,39 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   whatever.hpp                                       :+:      :+:    :+:   */
+/*   iter.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jimbow <jimbow@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/20 10:21:09 by jimbow            #+#    #+#             */
-/*   Updated: 2026/05/20 11:09:41 by jimbow           ###   ########.fr       */
+/*   Created: 2026/05/20 11:08:35 by jimbow            #+#    #+#             */
+/*   Updated: 2026/05/20 11:25:46 by jimbow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef WHATEVER_HPP
-# define WHATEVER_HPP
+#ifndef ITER_HPP
+# define ITER_HPP
 
-template <typename T>
+#include <iostream>
 
-void	swap(T& a, T& b)
+template <typename T, typename F>
+
+void	iter(T* array, const std::size_t lenght, F func)
 {
-	T tmp = a;
-	a = b;
-	b = tmp;
-}
-
-template <typename T>
-
-T	min(T a, T b)
-{
-	return (a < b) ? a : b;
-}
-
-template <typename T>
-
-T max(T a, T b)
-{
-	return (a > b) ? a : b;
+	for (std::size_t i = 0; i < lenght; i++)
+		func(array[i]);
 }
 
 #endif
