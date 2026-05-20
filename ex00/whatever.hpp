@@ -6,7 +6,7 @@
 /*   By: jimbow <jimbow@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/20 10:21:09 by jimbow            #+#    #+#             */
-/*   Updated: 2026/05/20 11:09:41 by jimbow           ###   ########.fr       */
+/*   Updated: 2026/05/20 13:43:57 by jimbow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define WHATEVER_HPP
 
 template <typename T>
-
 void	swap(T& a, T& b)
 {
 	T tmp = a;
@@ -23,14 +22,12 @@ void	swap(T& a, T& b)
 }
 
 template <typename T>
-
 T	min(T a, T b)
 {
 	return (a < b) ? a : b;
 }
 
 template <typename T>
-
 T max(T a, T b)
 {
 	return (a > b) ? a : b;
