@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: jimbow <jimbow@student.42.fr>              +#+  +:+       +#+         #
+#    By: jodone <jodone@student.42angouleme.fr>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/04/08 10:36:14 by jodone            #+#    #+#              #
-#    Updated: 2026/05/20 11:06:11 by jimbow           ###   ########.fr        #
+#    Updated: 2026/05/26 13:31:03 by jodone           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,8 +19,6 @@ RESET   := \033[0m
 
 # DIR
 OBJ_DIR		= objects/
-MAT			= Materia/
-CHAR		= Character/
 
 # START WITH A FEW FUNCTIONS
 NAME		= a.out
